@@ -1,0 +1,114 @@
+body{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto ;
+    
+    grid-template-areas: 
+    "i1 i2"
+    "i3 i3"
+    "i4 i4"
+    "i5 i5"
+    "i6 i6"
+    "i7 i7"
+    "i10 i10";
+    
+   }
+   
+   .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    
+    font-size: 14px;
+    width: 42%;
+   }
+   .required::after{
+    content: ' *';
+    color: red;
+   }
+   .checked{
+    color: orange;
+   }
+   h4{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   #item1{
+    grid-area: i1;
+    width: max-content;
+   }
+   #box1{
+    width: 12rem;
+   }
+   #box2{
+    margin-top: 34px;
+    width: 12rem;
+   }
+   #item2{
+    grid-area: i2;
+    margin-right: 54rem;
+    width: max-content;
+   }
+   #item3{
+    #box3{
+        width: 26rem;
+    }
+    grid-area: i3;
+   }
+   #item4{
+    grid-area: i4;
+   }
+   #item5{  
+    grid-area: i5;
+    width: max-content;
+   }
+   table{
+    border-collapse: collapse;
+    width: 100%;
+   }
+   th, td {
+    text-align: center;
+    padding: 10px;
+    font-weight: lighter;
+   }
+   tr:nth-child(even){
+    background-color: rgba(90, 88, 88, 0.226);
+   }
+   #item6{
+    grid-area: i6;
+   }
+   #item7{
+    #commentbox{
+        width: 99%;
+        height: 5rem;
+    }
+    grid-area: i7;
+   }
+   #btn{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 0%;
+    margin-top: 5px;
+    border-color: rgb(214, 192, 192);
+   }
+   @media(min-width: 1000px){
+    .container{
+        display: grid;
+        margin-left: 0px;
+        text-align: center;
+        grid-template-columns: 1fr 0.2fr 1fr 3fr 3fr 3fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "i1"
+        "i2"
+        "i3" 
+        "i4"
+        "i5"
+        "i6"
+        "i7";
+        grid-gap: 0.7rem;
+    }
+}

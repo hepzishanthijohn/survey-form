@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="grid-container" >
+        <div class="grid-item" id="item1">
+            <h4 class="required">Name</h4>
+            <input type="text" id="box1">
+            <div>first</div>
+        </div>
+        <div class="grid-item" id="item2">
+            <input type="text" id="box2">
+            <div>last</div>
+        </div>
+        <div class="grid-item" id="item3">
+            <h4 class="required">Email</h4>
+            <input type="text" id="box3">
+        </div>
+        <div class="grid-item" id="item4">
+            <div>
+                <h4 class="required">Your Experience</h4>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div> 
+            <p>Overall, how would you rate your experience with us</p>
+        </div>
+        <div class="grid-item" id="item5">
+            <h4 class="required">How satisfied are you with</h4>
+            <div id="box5">
+                <table> 
+                    <tr> 
+                        <th></th>
+                        <th>Very Unsatisfied</th> 
+                        <th>Unsatisfied</th>
+                        <th>Neutral</th>
+                        <th>Satisfied</th> 
+                        <th>Very Satisfied</th> 
+                    </tr> 
+                      
+                    <tr> 
+                        <td>Purchase</td> 
+                        <td><input type="radio"></td> 
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td> 
+                        <td><input type="radio"></td> 
+                        <td><input type="radio"></td>  
+                    </tr> 
+                      
+                    <tr> 
+                        <td>Service</td> 
+                        <td><input type="radio"></td> 
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td> 
+                        <td><input type="radio"></td> 
+                        <td><input type="radio"></td>  
+                    </tr>  
+                      
+                    <tr> 
+                        <td>Overall Company</td> 
+                        <td><input type="radio"></td> 
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td> 
+                        <td><input type="radio"></td> 
+                        <td><input type="radio"></td>  
+                    </tr> 
+                </table> 
+            </div>
+            
+        </div>
+        <div class="grid-item" id="item6">
+            <h4 class="required">How likely are you to</h4>
+            <div id="box5">
+                <table> 
+                    <tr> 
+                        <th></th>
+                        <th>Very Unlikely</th> 
+                        <th>Unlikely</th>
+                        <th>Neutral</th>
+                        <th>Likely</th> 
+                        <th>Very Likely</th> 
+                    </tr>    
+                    <tr> 
+                        <td>Buy from us again</td> 
+                        <td><input type="radio"></td> 
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td> 
+                        <td><input type="radio"></td> 
+                        <td><input type="radio"></td>  
+                    </tr> 
+                      
+                    <tr> 
+                        <td style="width: 120px;">Recommend our product to others</td> 
+                        <td><input type="radio"></td> 
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td> 
+                        <td><input type="radio"></td> 
+                        <td><input type="radio"></td>  
+                    </tr>  
+                      
+                    <tr> 
+                        <td>Recommend our company to others</td> 
+                        <td><input type="radio"></td> 
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td> 
+                        <td><input type="radio"></td> 
+                        <td><input type="radio"></td>  
+                    </tr> 
+                </table> 
+            </div>
+        </div>
+        <div class="grid-item" id="item7">
+            <h4>Additional comments or suggestions</h4>
+            <input type="text" id="commentbox">
+        </div>
+       </div>
+
+       <button id="btn">submit</button>
+</body>
+</html>
